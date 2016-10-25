@@ -4,6 +4,6 @@ repositories {
     jcenter()
 }
 
-dependencies {
-    testCompile 'junit:junit:4.11'
+dependencies { 
+   testCompile 'junit:junit:4.11'
 }
