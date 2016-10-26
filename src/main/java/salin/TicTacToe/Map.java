@@ -27,4 +27,23 @@ public class Map {
 		map[key-1] = Player;
 	}
 	
+	public void printMap() {
+		String line1;
+		String line2;
+		String line3;
+		
+		line1 = map[0]+" | "+map[1]+" | "+map[2];
+		line2 = map[3]+" | "+map[4]+" | "+map[5];
+		line3 = map[6]+" | "+map[7]+" | "+map[8];
+		
+		out.println(line1);
+		out.println();
+		out.println("----------");
+		out.println();
+		out.println(line2);
+		out.println();
+		out.println("----------");
+		out.println();
+		out.println(line3);
+	}
 }
