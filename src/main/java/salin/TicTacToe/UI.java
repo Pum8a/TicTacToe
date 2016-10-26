@@ -2,15 +2,15 @@ package salin.TicTacToe;
 
 public class UI {
 
-	public static void main() {
+	public static void main(String args[]) {
 		header();
 	}
 
 	private static void header() {
-		System.out.print("**************************************");
-		System.out.print("*                                    *");
-		System.out.print("*             Tic Tac Toe            *");
-		System.out.print("*                                    *");
-		System.out.print("**************************************");
+		System.out.println("**************************************");
+		System.out.println("*                                    *");
+		System.out.println("*             Tic Tac Toe            *");
+		System.out.println("*                                    *");
+		System.out.println("**************************************");
 	}
 }
