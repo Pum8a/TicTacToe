@@ -5,10 +5,15 @@ import org.junit.Test;
 
 public class MapTest {
 	@Test
-	public void MapCreateTest() {
+	public void mapCreateTest() {
 		Map map = new Map();
-		for(int i=1; i<=map.getSize(); i++) {
-			assertEquals(Integer.toString(i), map.getCurrent(i));
-		}
+		assertEquals("1", map.getCurrent(1));
+	}
+	
+	@Test
+	public void mapUpdateTest() {
+		Map map = new Map();
+		map.updateMap(3, "X");
+		assertEquals("X", map.getCurrent(3));
 	}
 }
