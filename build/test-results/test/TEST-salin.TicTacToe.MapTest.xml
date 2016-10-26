@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="salin.TicTacToe.MapTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2016-10-26T17:06:46" hostname="DESKTOP-71TPKN9" time="0.0">
-  <properties/>
-  <testcase name="mapUpdateTest" classname="salin.TicTacToe.MapTest" time="0.0"/>
-  <testcase name="mapCreateTest" classname="salin.TicTacToe.MapTest" time="0.0"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
