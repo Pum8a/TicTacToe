@@ -23,8 +23,8 @@ public class Map {
 		return size;
 	}
 	
-	public void updateMap(int key, String Player) {
-		map[key-1] = Player;
+	public void updateMap(int key, String player) {
+		map[key-1] = player;
 	}
 	
 	public void printMap() {
