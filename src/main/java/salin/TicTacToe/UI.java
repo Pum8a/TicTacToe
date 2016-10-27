@@ -56,15 +56,20 @@ public class UI {
 
 	private static void info() {
 		System.out.println("*******************************");
+		System.out.println("* Tic Tac Toe is for two      *");
+		System.out.println("* players, X and O, who take  *");
+		System.out.println("* turns marking the numbers   *");
+		System.out.println("* in a 3 x 3 grid. The player *");
+		System.out.println("* who succeeds in placing     *");
+		System.out.println("* three of their marks in a   *");
+		System.out.println("* horizontal, vertical or     *");
+		System.out.println("* diagonal row wins the game! *");
 		System.out.println("*                             *");
-		System.out.println("*                             *");
-		System.out.println("*                             *");
-		System.out.println("*                             *");
-		System.out.println("*                             *");
-		System.out.println("*                             *");
-		System.out.println("*                             *");
-		System.out.println("*                             *");
-		System.out.println("*                             *");
+		System.out.println("*         1 | O | X           *");
+		System.out.println("*        ---|---|---          *");
+		System.out.println("*         X | O | O           *");
+		System.out.println("*        ---|---|---          *");
+		System.out.println("*         X | X | O           *");
 		System.out.println("*******************************");
 	}
 
