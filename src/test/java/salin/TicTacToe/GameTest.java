@@ -11,4 +11,12 @@ public class GameTest {
 		assertNotNull(game.getPlayer());
 		assertNotNull(game.getMap());
 	}
+
+	@Test
+	public void testValidInput() {
+	    Game game = new Game();
+        assertEquals(false, game.validInput(10));
+	}
 }
+
+

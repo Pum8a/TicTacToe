@@ -9,11 +9,17 @@ public class MapTest {
 		Map map = new Map();
 		assertEquals("1", map.getCurrent(1));
 	}
-	
+
 	@Test
 	public void mapUpdateTest() {
 		Map map = new Map();
 		map.updateMap(3, "X");
 		assertEquals("X", map.getCurrent(3));
+	}
+
+	@Test
+	public void getIndexTest() {
+	    Map map = new Map();
+        asserEquals("1",map.getCurrent(1));
 	}
 }
