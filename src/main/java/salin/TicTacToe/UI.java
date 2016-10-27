@@ -51,7 +51,6 @@ public class UI {
 
 	private static void play() {
 		Game game = new Game();
-		game.newGame();
 	}
 
 	private static void info() {
