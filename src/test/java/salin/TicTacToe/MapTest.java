@@ -20,6 +20,6 @@ public class MapTest {
 	@Test
 	public void getIndexTest() {
 	    Map map = new Map();
-        asserEquals("1",map.getCurrent(1));
+        assertEquals("1",map.getCurrent(1));
 	}
 }
