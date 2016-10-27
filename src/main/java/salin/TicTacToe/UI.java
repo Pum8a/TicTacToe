@@ -51,6 +51,7 @@ public class UI {
 
 	private static void play() {
 		Game game = new Game();
+		game.play();
 	}
 
 	private static void info() {
