@@ -1,4 +1,5 @@
 #!/bin/bash
 
+./gradlew clean
 ./gradlew compileJava
 ./gradlew compileTestJava

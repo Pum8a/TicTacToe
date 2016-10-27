@@ -10,11 +10,11 @@ public class UI {
 	}
 
 	private static void header() {
-		System.out.println("**************************************");
-		System.out.println("*                                    *");
-		System.out.println("*             Tic Tac Toe            *");
-		System.out.println("*                                    *");
-		System.out.println("**************************************");
+		System.out.println("*******************************");
+		System.out.println("*                             *");
+		System.out.println("*         Tic Tac Toe         *");
+		System.out.println("*                             *");
+		System.out.println("*******************************");
 	}
 
 	private static void menu() {	
@@ -51,27 +51,32 @@ public class UI {
 
 	private static void play() {
 		Game game = new Game();
+		game.newGame();
 	}
 
 	private static void info() {
-		System.out.println("**************************************");
-		System.out.println("*                                    *");
-		System.out.println("*                                    *");
-		System.out.println("*                                    *");
-		System.out.println("*                                    *");
-		System.out.println("*                                    *");
-		System.out.println("*                                    *");
-		System.out.println("**************************************");
+		System.out.println("*******************************");
+		System.out.println("*                             *");
+		System.out.println("*                             *");
+		System.out.println("*                             *");
+		System.out.println("*                             *");
+		System.out.println("*                             *");
+		System.out.println("*                             *");
+		System.out.println("*                             *");
+		System.out.println("*                             *");
+		System.out.println("*                             *");
+		System.out.println("*******************************");
 	}
 
 	private static void credit() {
-		System.out.println("************Developed by : ***********");
-		System.out.println("*        Eythor Traustason           *");
-		System.out.println("*        Jon Thor Gudjonsson         *");
-		System.out.println("*        Olafur Unnar Torfason       *");
-		System.out.println("*        Sigurdur Unnar Hauksson     *");
-		System.out.println("*        Stefan Johannsson           *");
-		System.out.println("*        Stefan Ragnar Viglundsson   *");
-		System.out.println("**************************************");
+		System.out.println("*******************************");
+		System.out.println("*   Developed by :            *");
+		System.out.println("*   Eythor Traustason         *");
+		System.out.println("*   Jon Thor Gudjonsson       *");
+		System.out.println("*   Olafur Unnar Torfason     *");
+		System.out.println("*   Sigurdur Unnar Hauksson   *");
+		System.out.println("*   Stefan Johannsson         *");
+		System.out.println("*   Stefan Ragnar Viglundsson *");
+		System.out.println("*******************************");
 	}
 }

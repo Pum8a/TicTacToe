@@ -1,7 +1,5 @@
 package salin.TicTacToe;
 
-import static java.lang.System.out;
-
 public class Map {
 	private int size;
 	private String[] map;
@@ -28,22 +26,16 @@ public class Map {
 	}
 	
 	public void printMap() {
-		String line1;
-		String line2;
-		String line3;
-		
-		line1 = map[0]+" | "+map[1]+" | "+map[2];
-		line2 = map[3]+" | "+map[4]+" | "+map[5];
-		line3 = map[6]+" | "+map[7]+" | "+map[8];
-		
-		out.println(line1);
-		out.println();
-		out.println("----------");
-		out.println();
-		out.println(line2);
-		out.println();
-		out.println("----------");
-		out.println();
-		out.println(line3);
+		System.out.println("*******************************");
+		System.out.println("*         |         |         *");
+		System.out.println("*    " + map[0] + "    |    " + map[1] + "    |    " + map[2] + "    *");
+		System.out.println("*_________|_________|_________*");
+		System.out.println("*         |         |         *");
+		System.out.println("*    " + map[3] + "    |    " + map[4] + "    |    " + map[5] + "    *");
+		System.out.println("*_________|_________|_________*");
+		System.out.println("*         |         |         *");
+		System.out.println("*    " + map[6] + "    |    " + map[7] + "    |    " + map[8] + "    *");
+		System.out.println("*         |         |         *");
+		System.out.println("*******************************");
 	}
 }
