@@ -1,5 +1,12 @@
 language: java
 jdk:
-  - oraclejdk8
+- oraclejdk8
 notifications:
   email: false
+deploy:
+  provider: heroku
+  api_key:
+    secure: Z3OGbscWfLpaFu0CVh0lfVcrBHYMDKfgupk4m+Akr+5akUDdRprH/JQgt4rS7YOJxnRr0jRmy6lfLbu1MKFdJnUa/XrDhK7qnXM0AWKeWMFt9pgj/MF1mUZ3zACxOLMUk7jxGmueB3ow43AX3oNjep/YE6FbDmos0nf1KEvMZCOLxgjGl0Sth7c79j6gtIYZHynUyALfJ9bxBQoHyvo/lGzLr/sad94+vqWU0Ond9AlivxNtPk9Ul8xoQA6gvG3BdHI2+IXszPG3F74+9uzX25FZ9Pvs/t9y9LAW2wUH9NeHOqta7/u22zKWRjFb1jWTdAwIZOrzCncfhZusGb+eiUzqS/7ygKffQS1zr6jNv/fNS6RrUz7nEtQzEp90nq2OFQujnaE8ADt5HWMirpA3l6+mCBLEV4CfxAeW9zGZbVrVI6Ja2sKhPMxP6TmUXRZz1uJmJzQCdq3iHVHpfM+PyTkV+83JmR6KQ9cWKB46ojKrZH3tnmojH8qCeceawdfWuU2b/RwqjcHdW+2F2xRmx/gsEZ2Mp9G5p/4Ev9PcgmvkGFnUEa4LNoTQkEsJVf7FXfTr06fSJUcOtogF299QxGlrB4ltKE+vVPP6iyT/nfvyp9VVv23vDaRWaT5nW7eNmkihM5xoeMf9jOpByNC9AWbLJNuffbLyJTPrbq1Vd9k=
+  app: fast-stream-30461
+  on:
+    repo: salinnhanse/TicTacToe
