@@ -1,6 +1,8 @@
 package salin.TicTacToe;
 
 import java.util.Scanner;
+import java.net.URL;
+import javax.sound.sampled.*;
 
 public class UI {
 
@@ -25,10 +27,10 @@ public class UI {
 			System.out.println("3 - Credit");
 			System.out.println("Every thing else quits.");
 
-			Scanner scan = new Scanner(System.in);
-			int x = scan.nextInt();
+			Scanner reader = new Scanner(System.in);
+			char x = reader.next().charAt(0);
 
-			switch (x){
+			switch (Character.getNumericValue(x)){
 				case 1:
 					System.out.println("PLAY");
 					play();
@@ -75,6 +77,18 @@ public class UI {
 
 	private static void credit() {
 		System.out.println("*******************************");
+		System.out.println("*             /\\              *");
+		System.out.println("*            // \\             *");
+		System.out.println("*           ///  \\            *");
+		System.out.println("*          ////   \\           *");
+		System.out.println("*         /////    \\          *");
+		System.out.println("*        /\\    \\\\\\\\/\\         *");
+		System.out.println("*       // \\   \\\\\\// \\        *");
+		System.out.println("*      ///  \\  \\\\///  \\       *");
+		System.out.println("*     ////   \\ \\////   \\      *");
+		System.out.println("*    /////    \\/////    \\     *");
+		System.out.println("*    	SalinHansE CO.        *");
+		System.out.println("*                             *");
 		System.out.println("*   Developed by :            *");
 		System.out.println("*   Eythor Traustason         *");
 		System.out.println("*   Jon Thor Gudjonsson       *");
