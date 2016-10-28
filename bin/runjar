@@ -1,0 +1,5 @@
+#!/bin/bash
+
+./gradlew installDist
+java -jar build/libs/TicTacToe.jar
+./gradlew clean

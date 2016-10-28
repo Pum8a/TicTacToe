@@ -17,5 +17,12 @@ run {
 }
 
 task stage {
-dependsOn installDist
+    dependsOn installDist
+}
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'salin.TicTacToe.UI'
+    }
+    exclude 'META-INF/*.DSA', 'META-INF/*.RSA', 'META-INF/*.SF'
 }
