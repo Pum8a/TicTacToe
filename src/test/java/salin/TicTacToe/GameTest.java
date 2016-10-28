@@ -9,7 +9,6 @@ public class GameTest {
 	public void testConstructor() {
 		Game game = new Game();
 		assertNotNull(game.getPlayer());
-		//assertNotNull(game.getMap());
 	}
 }
 
