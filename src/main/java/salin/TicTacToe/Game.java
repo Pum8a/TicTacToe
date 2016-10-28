@@ -24,12 +24,9 @@ public class Game {
 		System.out.println("Game Started");
 		int ticks = 0;
 
-		ui.printPlayer(player.getPlayerSymbol());
 		while(ticks < 10) {
 			getMap();
-			System.out.println("Player " + getPlayer() + " turn");
-			System.out.println("--- Pick a number between 1-9");
-			System.out.println("--- Press Q to quit");
+			ui.printPlayer(player.getPlayerSymbol());
 			
 			String input = control.getGameCommand(map);
 			if(input == "Quit") {
@@ -45,8 +42,7 @@ public class Game {
             ticks++;
 		}
 		getMap();
-		System.out.println("The winner is player: " + getPlayer());
-		System.out.println("Congratulations!");
+		ui.printWinner(player.getPlayerSymbol());
 		ui.header();
 	}
 

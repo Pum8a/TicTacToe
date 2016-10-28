@@ -103,4 +103,9 @@ public class UI {
 		System.out.println("--- Pick a number between 1-9 to play");
 		System.out.println("--- Press Q to quit");
 	}
+
+	public static void printWinner(String player) {
+		System.out.println("The winner is player: " + player);
+		System.out.println("Congratulations!");
+	}
 }
