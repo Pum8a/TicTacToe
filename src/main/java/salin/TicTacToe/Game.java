@@ -3,10 +3,12 @@ package salin.TicTacToe;
 public class Game {
 	public Player player;
 	public Map map;
+	public UI ui;
 
 	public Game() {
 		player = new Player();
 		map = new Map();
+		ui = new UI();
 	}
 
 	public String getPlayer() {
@@ -21,10 +23,12 @@ public class Game {
 		Controller control = new Controller();		
 		System.out.println("Game Started");
 		int ticks = 0;
+
+		ui.printPlayer(player.getPlayerSymbol());
 		while(ticks < 10) {
 			getMap();
-			System.out.println("Player " + getPlayer() + " Turn.");
-			System.out.println("--- Pick a number between 1-9 to play");
+			System.out.println("Player " + getPlayer() + " turn");
+			System.out.println("--- Pick a number between 1-9");
 			System.out.println("--- Press Q to quit");
 			
 			String input = control.getGameCommand(map);
@@ -41,9 +45,8 @@ public class Game {
             ticks++;
 		}
 		getMap();
-		System.out.println("The winner is player: " + getPlayer() + ".");
+		System.out.println("The winner is player: " + getPlayer());
 		System.out.println("Congratulations!");
-		UI ui = new UI();
 		ui.header();
 	}
 
