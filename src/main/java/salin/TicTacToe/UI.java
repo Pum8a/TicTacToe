@@ -11,7 +11,7 @@ public class UI {
 		menu();
 	}
 
-	private static void header() {
+	public static void header() {
 		System.out.println("*******************************");
 		System.out.println("*                             *");
 		System.out.println("*         Tic Tac Toe         *");
@@ -29,6 +29,7 @@ public class UI {
 
 			Scanner reader = new Scanner(System.in);
 			char x = reader.next().charAt(0);
+			System.out.println();
 
 			switch (Character.getNumericValue(x)){
 				case 1:

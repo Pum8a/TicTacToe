@@ -4,11 +4,13 @@ import java.util.Scanner;
 
 public class Game {
 	private Player player;
-	private Map map;
+	public Map map;
+	private UI ui;
 
 	public Game() {
 		player = new Player();
 		map = new Map();
+		ui = new UI();
 	}
 
 	public String getPlayer() {
@@ -35,9 +37,16 @@ public class Game {
 			if(x == 'q' || x == 'Q') {
 				break;
 			}
+			
 			int key = Character.getNumericValue(x);
             if(validInput(key)) {
                 map.updateMap(key, getPlayer());
+                if(winner()) {
+                	System.out.println("THE WINNER IS: " + getPlayer());
+               		System.out.println();
+                	ui.header();
+                	break;
+                }
                 player.swapPlayer();
             }
             else {
@@ -60,7 +69,7 @@ public class Game {
         return true;
 	}
 
-	private boolean winner() {
+	public boolean winner() {
 		if(map.getCurrent(1) == "X" && map.getCurrent(2) == "X" && map.getCurrent(3) == "X") {
 			return true;
 		}
