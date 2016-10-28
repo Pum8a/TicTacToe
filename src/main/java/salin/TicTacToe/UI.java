@@ -123,7 +123,7 @@ public class UI {
 		JFrame frame = new JFrame("Swing and JavaFX");
 		final JFXPanel fxPanel = new JFXPanel();
 	    frame.add(fxPanel);
-	    String soundFilename = "clubbedtodeath.mp3";
+	    String soundFilename = "credits.mp3";
 	    Media hit = new Media(new File(soundFilename).toURI().toString());
 		mediaPlayer = new MediaPlayer(hit);
 	}
