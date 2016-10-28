@@ -36,27 +36,31 @@ public class UI {
 		control = new Controller();
 		boolean replay = true;	
 		while(replay == true) {
-			System.out.println("1 - Play ");
+			System.out.println("1 - Play");
 			System.out.println("2 - Info");
 			System.out.println("3 - Credit");
-			System.out.println("Every thing else quits.");
+			System.out.println("Every thing else quits");
 
 			char x = control.getMenuCommand();
 
 			switch (Character.getNumericValue(x)){
 				case 1:
+					System.out.println();
 					System.out.println("PLAY");
 					play();
 				    break;
 				case 2: 
+					System.out.println();
 					System.out.println("INFO");
 					info();
 				    break;
 				case 3:
+					System.out.println();
 					System.out.println("CREDIT");
 					credit();
 				    break;
 				default :
+					System.out.println();
 					System.out.println("QUIT");
 					replay = false;
 					mediaPlayer.stop();
@@ -119,7 +123,6 @@ public class UI {
 	}
 
 	private static void musicSetup() {
-
 		JFrame frame = new JFrame("Swing and JavaFX");
 		final JFXPanel fxPanel = new JFXPanel();
 	    frame.add(fxPanel);
@@ -129,13 +132,17 @@ public class UI {
 	}
 
 	public static void printPlayer(String player) {
-			System.out.println("Player " + player + " turn");
-			System.out.println("--- Pick a number between 1-9 to play");
-			System.out.println("--- Press Q to quit");
+		System.out.println("Player " + player + " turn");
+		System.out.println("--- Pick a number between 1-9 to play");
+		System.out.println("--- Press Q to quit");
 	}
 
 	public static void printWinner(String player) {
 		System.out.println("The winner is player: " + player);
 		System.out.println("Congratulations!");
+	}
+
+	public static void printDraw() {
+		System.out.println("There was a draw, try again?");
 	}
 }

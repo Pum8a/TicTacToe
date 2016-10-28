@@ -24,7 +24,7 @@ public class Game {
 		System.out.println("Game Started");
 		int ticks = 0;
 
-		while(ticks < 10) {
+		while(ticks < 9) {
 			getMap();
 			ui.printPlayer(player.getPlayerSymbol());
 			
@@ -42,7 +42,12 @@ public class Game {
             ticks++;
 		}
 		getMap();
-		ui.printWinner(player.getPlayerSymbol());
+		if (winner()) {
+			ui.printWinner(player.getPlayerSymbol());	
+		}
+		else {
+			ui.printDraw();
+		}
 		ui.header();
 	}
 
