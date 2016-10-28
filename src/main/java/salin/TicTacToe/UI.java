@@ -15,9 +15,11 @@ import javax.swing.SwingUtilities;
 public class UI {
 
 	private static MediaPlayer mediaPlayer;
+	private static Controller control;
 
 	public static void main(String args[]) {
 		header();
+		musicSetup();
 		menu();
 		System.exit(0);
 	}
@@ -31,7 +33,7 @@ public class UI {
 	}
 
 	private static void menu() {	
-		Controller control = new Controller();
+		control = new Controller();
 		boolean replay = true;	
 		while(replay == true) {
 			System.out.println("1 - Play ");
@@ -90,13 +92,6 @@ public class UI {
 	}
 
 	private static void credit() {
-
-		JFrame frame = new JFrame("Swing and JavaFX");
-		final JFXPanel fxPanel = new JFXPanel();
-        frame.add(fxPanel);
-	    String soundFilename = "clubbedtodeath.mp3";
-	    Media hit = new Media(new File(soundFilename).toURI().toString());
-		mediaPlayer = new MediaPlayer(hit);
 	    mediaPlayer.play();
 
 		System.out.println("*******************************");
@@ -121,5 +116,15 @@ public class UI {
 		System.out.println("*   Stefan Ragnar Viglundsson *");
 		System.out.println("*******************************");
 
+	}
+
+	private static void musicSetup() {
+
+		JFrame frame = new JFrame("Swing and JavaFX");
+		final JFXPanel fxPanel = new JFXPanel();
+        frame.add(fxPanel);
+	    String soundFilename = "clubbedtodeath.mp3";
+	    Media hit = new Media(new File(soundFilename).toURI().toString());
+		mediaPlayer = new MediaPlayer(hit);
 	}
 }
