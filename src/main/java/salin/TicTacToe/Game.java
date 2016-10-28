@@ -3,7 +3,7 @@ package salin.TicTacToe;
 import java.util.Scanner;
 
 public class Game {
-	private Player player;
+	public Player player;
 	public Map map;
 	private UI ui;
 
@@ -70,53 +70,28 @@ public class Game {
 	}
 
 	public boolean winner() {
-		if(map.getCurrent(1) == "X" && map.getCurrent(2) == "X" && map.getCurrent(3) == "X") {
+		if(map.getCurrent(1) == getPlayer() && map.getCurrent(2) == getPlayer() && map.getCurrent(3) == getPlayer()) {
 			return true;
 		}
-		if(map.getCurrent(4) == "X" && map.getCurrent(5) == "X" && map.getCurrent(6) == "X") {
+		if(map.getCurrent(4) == getPlayer() && map.getCurrent(5) == getPlayer() && map.getCurrent(6) == getPlayer()) {
 			return true;
 		}
-		if(map.getCurrent(7) == "X" && map.getCurrent(8) == "X" && map.getCurrent(9) == "X") {
+		if(map.getCurrent(7) == getPlayer() && map.getCurrent(8) == getPlayer() && map.getCurrent(9) == getPlayer()) {
 			return true;
 		}
-		if(map.getCurrent(1) == "X" && map.getCurrent(4) == "X" && map.getCurrent(7) == "X") {
+		if(map.getCurrent(1) == getPlayer() && map.getCurrent(4) == getPlayer() && map.getCurrent(7) == getPlayer()) {
 			return true;
 		}
-		if(map.getCurrent(2) == "X" && map.getCurrent(5) == "X" && map.getCurrent(8) == "X") {
+		if(map.getCurrent(2) == getPlayer() && map.getCurrent(5) == getPlayer() && map.getCurrent(8) == getPlayer()) {
 			return true;
 		}
-		if(map.getCurrent(3) == "X" && map.getCurrent(6) == "X" && map.getCurrent(9) == "X") {
+		if(map.getCurrent(3) == getPlayer() && map.getCurrent(6) == getPlayer() && map.getCurrent(9) == getPlayer()) {
 			return true;
 		}
-		if(map.getCurrent(1) == "X" && map.getCurrent(5) == "X" && map.getCurrent(9) == "X") {
+		if(map.getCurrent(1) == getPlayer() && map.getCurrent(5) == getPlayer() && map.getCurrent(9) == getPlayer()) {
 			return true;
 		}
-		if(map.getCurrent(3) == "X" && map.getCurrent(5) == "X" && map.getCurrent(7) == "X") {
-			return true;
-		}
-
-		if(map.getCurrent(1) == "O" && map.getCurrent(2) == "O" && map.getCurrent(3) == "O") {
-			return true;
-		}
-		if(map.getCurrent(4) == "O" && map.getCurrent(5) == "O" && map.getCurrent(6) == "O") {
-			return true;
-		}
-		if(map.getCurrent(7) == "O" && map.getCurrent(8) == "O" && map.getCurrent(9) == "O") {
-			return true;
-		}
-		if(map.getCurrent(1) == "O" && map.getCurrent(4) == "O" && map.getCurrent(7) == "O") {
-			return true;
-		}
-		if(map.getCurrent(2) == "O" && map.getCurrent(5) == "O" && map.getCurrent(8) == "O") {
-			return true;
-		}
-		if(map.getCurrent(3) == "O" && map.getCurrent(6) == "O" && map.getCurrent(9) == "O") {
-			return true;
-		}
-		if(map.getCurrent(1) == "O" && map.getCurrent(5) == "O" && map.getCurrent(9) == "O") {
-			return true;
-		}
-		if(map.getCurrent(3) == "O" && map.getCurrent(5) == "O" && map.getCurrent(7) == "O") {
+		if(map.getCurrent(3) == getPlayer() && map.getCurrent(5) == getPlayer() && map.getCurrent(7) == getPlayer()) {
 			return true;
 		}
 		

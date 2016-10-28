@@ -33,6 +33,7 @@ public class GameTest {
 	@Test
 	public void testWinner2() {
 		Game game = new Game();
+		game.player.swapPlayer();
 		game.map.updateMap(1, "O");
 		game.map.updateMap(5, "O");
 		game.map.updateMap(9, "O");
