@@ -1,6 +1,5 @@
 package salin.TicTacToe;
 
-import java.util.Scanner;
 import java.net.URL;
 import javax.sound.sampled.*;
 
@@ -20,6 +19,7 @@ public class UI {
 	}
 
 	private static void menu() {	
+		Controller control = new Controller();
 		boolean replay = true;	
 		while(replay == true) {
 			System.out.println("1 - Play ");
@@ -27,9 +27,7 @@ public class UI {
 			System.out.println("3 - Credit");
 			System.out.println("Every thing else quits.");
 
-			Scanner reader = new Scanner(System.in);
-			char x = reader.next().charAt(0);
-			System.out.println();
+			char x = control.getMenuCommand();
 
 			switch (Character.getNumericValue(x)){
 				case 1:

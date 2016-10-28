@@ -1,16 +1,12 @@
 package salin.TicTacToe;
 
-import java.util.Scanner;
-
 public class Game {
 	public Player player;
 	public Map map;
-	private UI ui;
 
 	public Game() {
 		player = new Player();
 		map = new Map();
-		ui = new UI();
 	}
 
 	public String getPlayer() {
@@ -22,51 +18,33 @@ public class Game {
 	}
 
 	public void play() {
-		
-		Scanner reader = new Scanner(System.in);
+		Controller control = new Controller();		
 		System.out.println("Game Started");
-		while(true) {
+		int ticks = 0;
+		while(ticks < 10) {
 			getMap();
-			System.out.print("player ");
-			System.out.print(getPlayer());
-			System.out.println(" Turn");
-			System.out.println("Pick a number between 1-9 to play");
-			System.out.println("Press Q to quit");
-
-			char x = reader.next().charAt(0);
-			if(x == 'q' || x == 'Q') {
+			System.out.println("Player " + getPlayer() + " Turn.");
+			System.out.println("--- Pick a number between 1-9 to play");
+			System.out.println("--- Press Q to quit");
+			
+			String input = control.getGameCommand(map);
+			if(input == "Quit") {
 				break;
 			}
-			
-			int key = Character.getNumericValue(x);
-            if(validInput(key)) {
-                map.updateMap(key, getPlayer());
-                if(winner()) {
-                	System.out.println("THE WINNER IS: " + getPlayer());
-               		System.out.println();
-                	ui.header();
-                	break;
-                }
-                player.swapPlayer();
+			int key = Integer.parseInt(input);
+
+            map.updateMap(key, getPlayer());
+            if (winner()) {
+            	break;
             }
-            else {
-                System.out.println("Invaild input!! Try again");
-            }
+            player.swapPlayer();
+            ticks++;
 		}
-	}
-
-	private boolean validInput(int key) {
-        if(key < 1 || key > 9) {
-            return false;
-        }
-        else if(map.getCurrent(key) == "X") {
-            return false;
-        }
-        else if(map.getCurrent(key) == "O") {
-            return false;
-        }
-
-        return true;
+		getMap();
+		System.out.println("The winner is player: " + getPlayer() + ".");
+		System.out.println("Congratulations!");
+		UI ui = new UI();
+		ui.header();
 	}
 
 	public boolean winner() {
