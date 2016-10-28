@@ -110,5 +110,6 @@ public class Game {
 		if(map.getCurrent(3) == "O" && map.getCurrent(5) == "O" && map.getCurrent(7) == "O") {
 			return true;
 		}
+	}
 
 }
