@@ -46,6 +46,7 @@ public class UI {
 			switch (Character.getNumericValue(x)){
 				case 1:
 					System.out.println("PLAY");
+					System.out.println("Game Started");
 					play();
 				    break;
 				case 2: 
