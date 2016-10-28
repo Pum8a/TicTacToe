@@ -1,5 +1,6 @@
 package salin.TicTacToe;
 
+
 import java.util.Scanner;
 import java.io.File;
 import javafx.scene.media.Media;
@@ -9,6 +10,7 @@ import javafx.embed.swing.JFXPanel;
 import javax.swing.JFrame;
 import javafx.application.Platform;
 import javax.swing.SwingUtilities;
+
 
 public class UI {
 
@@ -29,6 +31,7 @@ public class UI {
 	}
 
 	private static void menu() {	
+		Controller control = new Controller();
 		boolean replay = true;	
 		while(replay == true) {
 			System.out.println("1 - Play ");
@@ -36,9 +39,7 @@ public class UI {
 			System.out.println("3 - Credit");
 			System.out.println("Every thing else quits.");
 
-			Scanner reader = new Scanner(System.in);
-			char x = reader.next().charAt(0);
-			System.out.println();
+			char x = control.getMenuCommand();
 
 			switch (Character.getNumericValue(x)){
 				case 1:
@@ -99,16 +100,16 @@ public class UI {
 	    mediaPlayer.play();
 
 		System.out.println("*******************************");
-		System.out.println("*             /\\             *");
-		System.out.println("*            // \\            *");
-		System.out.println("*           ///  \\           *");
-		System.out.println("*          ////   \\          *");
-		System.out.println("*         /////    \\         *");
-		System.out.println("*        /\\    \\\\\\\\/\\   *");
-		System.out.println("*       // \\   \\\\\\// \\   *");
-		System.out.println("*      ///  \\  \\\\///  \\   *");
-		System.out.println("*     ////   \\ \\////   \\   *");
-		System.out.println("*    /////    \\/////    \\   *");
+		System.out.println("*             /\\              *");
+		System.out.println("*            // \\             *");
+		System.out.println("*           ///  \\            *");
+		System.out.println("*          ////   \\           *");
+		System.out.println("*         /////    \\          *");
+		System.out.println("*        /\\    \\\\\\\\/\\         *");
+		System.out.println("*       // \\   \\\\\\// \\        *");
+		System.out.println("*      ///  \\  \\\\///  \\       *");
+		System.out.println("*     ////   \\ \\////   \\      *");
+		System.out.println("*    /////    \\/////    \\     *");
 		System.out.println("*    	SalinHansE CO.        *");
 		System.out.println("*                             *");
 		System.out.println("*   Developed by :            *");
