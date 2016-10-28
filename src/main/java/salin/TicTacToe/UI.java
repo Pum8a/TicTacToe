@@ -77,16 +77,16 @@ public class UI {
 
 	private static void credit() {
 		System.out.println("*******************************");
-		System.out.println("*             /\\              *");
-		System.out.println("*            // \\             *");
-		System.out.println("*           ///  \\            *");
-		System.out.println("*          ////   \\           *");
-		System.out.println("*         /////    \\          *");
-		System.out.println("*        /\\    \\\\\\\\/\\         *");
-		System.out.println("*       // \\   \\\\\\// \\        *");
-		System.out.println("*      ///  \\  \\\\///  \\       *");
-		System.out.println("*     ////   \\ \\////   \\      *");
-		System.out.println("*    /////    \\/////    \\     *");
+		System.out.println("*             /\\             *");
+		System.out.println("*            // \\            *");
+		System.out.println("*           ///  \\           *");
+		System.out.println("*          ////   \\          *");
+		System.out.println("*         /////    \\         *");
+		System.out.println("*        /\\    \\\\\\\\/\\   *");
+		System.out.println("*       // \\   \\\\\\// \\   *");
+		System.out.println("*      ///  \\  \\\\///  \\   *");
+		System.out.println("*     ////   \\ \\////   \\   *");
+		System.out.println("*    /////    \\/////    \\   *");
 		System.out.println("*    	SalinHansE CO.        *");
 		System.out.println("*                             *");
 		System.out.println("*   Developed by :            *");
