@@ -60,5 +60,55 @@ public class Game {
         return true;
 	}
 
+	private boolean winner() {
+		if(map.getCurrent(1) == "X" && map.getCurrent(2) == "X" && map.getCurrent(3) == "X") {
+			return true;
+		}
+		if(map.getCurrent(4) == "X" && map.getCurrent(5) == "X" && map.getCurrent(6) == "X") {
+			return true;
+		}
+		if(map.getCurrent(7) == "X" && map.getCurrent(8) == "X" && map.getCurrent(9) == "X") {
+			return true;
+		}
+		if(map.getCurrent(1) == "X" && map.getCurrent(4) == "X" && map.getCurrent(7) == "X") {
+			return true;
+		}
+		if(map.getCurrent(2) == "X" && map.getCurrent(5) == "X" && map.getCurrent(8) == "X") {
+			return true;
+		}
+		if(map.getCurrent(3) == "X" && map.getCurrent(6) == "X" && map.getCurrent(9) == "X") {
+			return true;
+		}
+		if(map.getCurrent(1) == "X" && map.getCurrent(5) == "X" && map.getCurrent(9) == "X") {
+			return true;
+		}
+		if(map.getCurrent(3) == "X" && map.getCurrent(5) == "X" && map.getCurrent(7) == "X") {
+			return true;
+		}
+
+		if(map.getCurrent(1) == "O" && map.getCurrent(2) == "O" && map.getCurrent(3) == "O") {
+			return true;
+		}
+		if(map.getCurrent(4) == "O" && map.getCurrent(5) == "O" && map.getCurrent(6) == "O") {
+			return true;
+		}
+		if(map.getCurrent(7) == "O" && map.getCurrent(8) == "O" && map.getCurrent(9) == "O") {
+			return true;
+		}
+		if(map.getCurrent(1) == "O" && map.getCurrent(4) == "O" && map.getCurrent(7) == "O") {
+			return true;
+		}
+		if(map.getCurrent(2) == "O" && map.getCurrent(5) == "O" && map.getCurrent(8) == "O") {
+			return true;
+		}
+		if(map.getCurrent(3) == "O" && map.getCurrent(6) == "O" && map.getCurrent(9) == "O") {
+			return true;
+		}
+		if(map.getCurrent(1) == "O" && map.getCurrent(5) == "O" && map.getCurrent(9) == "O") {
+			return true;
+		}
+		if(map.getCurrent(3) == "O" && map.getCurrent(5) == "O" && map.getCurrent(7) == "O") {
+			return true;
+		}
 
 }
