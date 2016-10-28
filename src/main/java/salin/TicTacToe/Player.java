@@ -15,5 +15,4 @@ public class Player {
 			playerSymbol = "X";
 		}
 	}
-
 }

@@ -1,27 +1,19 @@
 package salin.TicTacToe;
 
-
 import java.util.Scanner;
-import java.io.File;
-import javafx.scene.media.Media;
-import javafx.scene.media.MediaPlayer;
-import javafx.application.Application;
-import javafx.embed.swing.JFXPanel;
-import javax.swing.JFrame;
-import javafx.application.Platform;
-import javax.swing.SwingUtilities;
-
 
 public class UI {
-
-	private static MediaPlayer mediaPlayer;
 	private static Controller control;
+	private static Game game;
+
+	public UI {
+		control = new Controller();
+		game = new Game();
+	}
 
 	public static void main(String args[]) {
 		header();
-		musicSetup();
 		menu();
-		System.exit(0);
 	}
 
 	public static void header() {
@@ -33,7 +25,6 @@ public class UI {
 	}
 
 	private static void menu() {	
-		control = new Controller();
 		boolean replay = true;	
 		while(replay == true) {
 			System.out.println("1 - Play");
@@ -64,20 +55,16 @@ public class UI {
 					System.out.println();
 					System.out.println("QUIT");
 					replay = false;
-					mediaPlayer.stop();
 					break;	
 			}
 		}
 	}
 
 	private static void play() {
-		mediaPlayer.stop();
-		Game game = new Game();
 		game.play();
 	}
 
 	private static void info() {
-		mediaPlayer.stop();
 		System.out.println("*******************************");
 		System.out.println("* Tic Tac Toe is for two      *");
 		System.out.println("* players, X and O, who take  *");
@@ -97,8 +84,6 @@ public class UI {
 	}
 
 	private static void credit() {
-	    mediaPlayer.play();
-
 		System.out.println("*******************************");
 		System.out.println("*             /\\              *");
 		System.out.println("*            // \\             *");
@@ -120,16 +105,6 @@ public class UI {
 		System.out.println("*   Stefan Johannsson         *");
 		System.out.println("*   Stefan Ragnar Viglundsson *");
 		System.out.println("*******************************");
-
-	}
-
-	private static void musicSetup() {
-		JFrame frame = new JFrame("Swing and JavaFX");
-		final JFXPanel fxPanel = new JFXPanel();
-	    frame.add(fxPanel);
-	    String soundFilename = "credits.mp3";
-	    Media hit = new Media(new File(soundFilename).toURI().toString());
-		mediaPlayer = new MediaPlayer(hit);
 	}
 
 	public static void printPlayer(String player) {

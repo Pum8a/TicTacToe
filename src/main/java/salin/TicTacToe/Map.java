@@ -10,7 +10,6 @@ public class Map {
 		for(int i=0; i<size; i++) {
 			map[i] = Integer.toString(i+1);
 		}
-		
 	}
 	
 	public String getCurrent(int key) {
