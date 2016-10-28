@@ -97,4 +97,10 @@ public class UI {
 		System.out.println("*   Stefan Ragnar Viglundsson *");
 		System.out.println("*******************************");
 	}
+
+	public static void printPlayer(String player) {
+		System.out.println("Player " + player + " turn");
+		System.out.println("--- Pick a number between 1-9 to play");
+		System.out.println("--- Press Q to quit");
+	}
 }
