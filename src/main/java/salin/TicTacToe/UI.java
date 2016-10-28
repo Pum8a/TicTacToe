@@ -4,11 +4,9 @@ import java.util.Scanner;
 
 public class UI {
 	private static Controller control;
-	private static Game game;
 
-	public UI {
+	public UI() {
 		control = new Controller();
-		game = new Game();
 	}
 
 	public static void main(String args[]) {
@@ -61,6 +59,7 @@ public class UI {
 	}
 
 	private static void play() {
+		Game game = new Game();
 		game.play();
 	}
 
