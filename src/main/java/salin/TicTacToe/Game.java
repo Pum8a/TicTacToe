@@ -21,7 +21,6 @@ public class Game {
 
 	public void play() {
 		Controller control = new Controller();		
-		System.out.println("Game Started");
 		int ticks = 0;
 
 		while(ticks < 9) {

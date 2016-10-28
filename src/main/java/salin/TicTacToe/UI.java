@@ -47,6 +47,7 @@ public class UI {
 				case 1:
 					System.out.println();
 					System.out.println("PLAY");
+					System.out.println("Game Started");
 					play();
 				    break;
 				case 2: 
