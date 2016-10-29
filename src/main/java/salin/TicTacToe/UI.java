@@ -122,6 +122,10 @@ public class UI {
 		System.out.println("Please try again.");
 	}
 
+	public static void printSpaceIsFull() {
+		System.out.println("This space is occupied, please try again.");
+	}
+
 	public static void printThankYouMsg() {
 		System.out.println("----------------------");
 		System.out.println("Thank you, come again.");

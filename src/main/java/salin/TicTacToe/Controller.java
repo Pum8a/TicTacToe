@@ -38,7 +38,7 @@ public class Controller {
 				if (key > 0 && key < 10) {
 					if (map.getCurrent(key) == "X" || map.getCurrent(key) == "O") {
 						map.printMap();
-						System.out.println("This space is occupied, please try again.");
+						ui.printSpaceIsFull();
 						continue;
 					}
 					else {
