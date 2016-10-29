@@ -117,6 +117,11 @@ public class UI {
 		System.out.println("Congratulations!");
 	}
 
+	public static void printErrorMessage() {
+		System.out.println("Oh no that's not what we are looking for.");
+		System.out.println("Please try again.");
+	}
+
 	public static void printDraw() {
 		System.out.println("There was a draw, try again?");
 	}

@@ -9,6 +9,7 @@ public class Controller {
 	}
 
 	public static char getMenuCommand() {
+		UI ui = new UI();
 		while (true) {
 			Scanner reader = new Scanner(System.in);
 			char input = reader.next().charAt(0);
@@ -25,6 +26,7 @@ public class Controller {
 	}
 
 	public static String getGameCommand(Map map) {
+		UI ui = new UI();
 		while (true) {
 			Scanner reader = new Scanner(System.in);
 			String input = reader.nextLine();
@@ -45,8 +47,7 @@ public class Controller {
 				}
 			}
 			map.printMap();
-			System.out.println("Oh no that's not what we are looking for.");
-			System.out.println("Please try again.");
+			ui.printErrorMessage();
 		}
 	}
 }
