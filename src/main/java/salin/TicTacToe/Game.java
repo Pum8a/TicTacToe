@@ -1,9 +1,9 @@
 package salin.TicTacToe;
 
 public class Game {
-	private static Player player;
-	private static Map map;
-	private static UI ui;
+	public static Player player;
+	public static Map map;
+	public static UI ui;
 
 	public Game() {
 		player = new Player();
