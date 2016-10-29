@@ -47,7 +47,7 @@ public class Controller {
 				}
 			}
 			map.printMap();
-			ui.printErrorMessage();
+			ui.printWrongInput();
 		}
 	}
 }

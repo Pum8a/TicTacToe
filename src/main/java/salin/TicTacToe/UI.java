@@ -117,7 +117,7 @@ public class UI {
 		System.out.println("Congratulations!");
 	}
 
-	public static void printErrorMessage() {
+	public static void printWrongInput() {
 		System.out.println("Oh no that's not what we are looking for.");
 		System.out.println("Please try again.");
 	}
