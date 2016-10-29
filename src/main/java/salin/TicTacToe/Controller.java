@@ -18,7 +18,7 @@ public class Controller {
 				return input;
 			}
 			else {
-				System.out.println("Thank you, come again.");
+				ui.printThankYouMsg();
 				break;
 			}
 		}

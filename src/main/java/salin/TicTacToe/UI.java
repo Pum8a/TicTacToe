@@ -122,6 +122,12 @@ public class UI {
 		System.out.println("Please try again.");
 	}
 
+	public static void printThankYouMsg() {
+		System.out.println("----------------------");
+		System.out.println("Thank you, come again.");
+		System.out.println("----------------------");
+	}
+
 	public static void printDraw() {
 		System.out.println("There was a draw, try again?");
 	}
