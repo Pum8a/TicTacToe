@@ -25,9 +25,16 @@ public class UI {
 	private static void menu() {	
 		boolean replay = true;	
 		while(replay == true) {
-			System.out.println("1 - Play");
-			System.out.println("2 - Info");
-			System.out.println("3 - Credit");
+			System.out.println("\t  ___________ ");
+			System.out.println("\t | 1 - Play  |");
+			System.out.println("\t  ----------- ");
+			System.out.println("\t  ___________ ");
+			System.out.println("\t | 2 - Info  |");
+			System.out.println("\t  ----------- ");
+			System.out.println("\t  ___________ ");			
+			System.out.println("\t | 3 - Credit|");
+			System.out.println("\t  ----------- ");
+			System.out.println("");
 			System.out.println("Every thing else quits");
 
 			char x = control.getMenuCommand();
