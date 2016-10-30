@@ -1,10 +1,12 @@
 apply plugin: 'java'
 apply plugin: 'application'
+apply plugin: 'jacoco'
 
 mainClassName = "salin.TicTacToe.UI"
 
 repositories {
     jcenter()
+    mavenCentral()
 }
 
 dependencies { 
@@ -30,4 +32,11 @@ jar {
 test {
     testLogging {
 	events "PASSED", "SKIPPED", "FAILED" }
+}
+
+jacocoTestReport {
+    reports {
+	xml.enabled = true
+	html.enabled = true
+    }
 }
