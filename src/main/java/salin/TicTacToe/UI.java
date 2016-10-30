@@ -124,13 +124,9 @@ public class UI {
 	public static void printWinner(String player) {
 		System.out.println("The winner is player: " + player);
 		System.out.println("Congratulations!");
-<<<<<<< HEAD
 		System.out.println("Press ENTER to go back to menu");
 		Scanner scanner = new Scanner(System.in);
    		scanner.nextLine();
-=======
-		System.out.println("");
->>>>>>> master
 	}
 
 	public static void printWrongInput() {
