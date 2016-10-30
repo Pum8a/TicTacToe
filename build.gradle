@@ -32,9 +32,3 @@ test {
     testLogging {
 	events "PASSED", "SKIPPED", "FAILED" }
 }
-
-jacocoTestReport {
-    reports {
-	xml.enabled true
-    }
-}
