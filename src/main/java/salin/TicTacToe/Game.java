@@ -23,7 +23,7 @@ public class Game {
 		Controller control = new Controller();		
 		int ticks = 0;
 
-		while(ticks < 9) {
+		while(notDraw(ticks)) {
 			getMap();
 			ui.printPlayer(player.getPlayerSymbol());
 			
@@ -48,6 +48,13 @@ public class Game {
 			ui.printDraw();
 		}
 		ui.header();
+	}
+
+	public boolean notDraw(int ticks) {
+		if(ticks >= 9) {
+			return false;
+		}
+		return true;
 	}
 
 	public boolean winner() {

@@ -3,6 +3,7 @@ package salin.TicTacToe;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.assertFalse;
 import org.junit.Test;
 
 public class GameTest {
@@ -43,7 +44,13 @@ public class GameTest {
 	@Test
 	public void testDraw() {
 		Game game = new Game();
-		assertTrue(game.draw(9));
+		assertFalse(game.notDraw(9));
+	}
+
+	@Test 
+	public void testDraw2() {
+		Game game = new Game();
+		assertTrue(game.notDraw(8));
 	}
 }
 
