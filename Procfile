@@ -1,1 +1,1 @@
-web: sh bin/deploy 
+web: sh bin/run
