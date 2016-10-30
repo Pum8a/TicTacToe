@@ -39,6 +39,12 @@ public class GameTest {
 		game.map.updateMap(9, "O");
 		assertTrue(game.winner());
 	}
+
+	@Test
+	public void testDraw() {
+		Game game = new Game();
+		assertTrue(game.draw(9));
+	}
 }
 
 
