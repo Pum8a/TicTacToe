@@ -110,6 +110,7 @@ public class UI {
 		System.out.println("*   Sigurdur Unnar Hauksson   *");
 		System.out.println("*   Stefan Johannsson         *");
 		System.out.println("*   Stefan Ragnar Viglundsson *");
+		System.out.println("*                             *");
 		System.out.println("*******************************");
 	}
 
@@ -117,14 +118,19 @@ public class UI {
 		System.out.println("Player " + player + " turn");
 		System.out.println("--- Pick a number between 1-9");
 		System.out.println("--- Press Q to quit");
+		System.out.println("");		
 	}
 
 	public static void printWinner(String player) {
 		System.out.println("The winner is player: " + player);
 		System.out.println("Congratulations!");
+<<<<<<< HEAD
 		System.out.println("Press ENTER to go back to menu");
 		Scanner scanner = new Scanner(System.in);
    		scanner.nextLine();
+=======
+		System.out.println("");
+>>>>>>> master
 	}
 
 	public static void printWrongInput() {
