@@ -1,1 +1,1 @@
-web: sh ./gradlew run
+web: sh bin/deploy
