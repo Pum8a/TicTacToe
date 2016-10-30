@@ -1,4 +1,4 @@
 #!/bin/bash
 
 ./gradlew clean
-./gradlew test
+./gradlew clean test

@@ -26,3 +26,8 @@ jar {
     }
     exclude 'META-INF/*.DSA', 'META-INF/*.RSA', 'META-INF/*.SF'
 }
+
+test {
+    testLogging {
+	events "PASSED", "SKIPPED", "FAILED" }
+}
